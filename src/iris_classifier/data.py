@@ -1,12 +1,10 @@
-from typing import TypeAlias
-
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 
 from iris_classifier.config import RANDOM_STATE, TEST_SIZE
 
-DatasetSplit: TypeAlias = tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]
+type DatasetSplit = tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]
 
 
 def load_dataset() -> tuple[pd.DataFrame, pd.Series]:

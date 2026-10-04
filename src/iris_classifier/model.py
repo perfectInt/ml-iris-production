@@ -1,12 +1,10 @@
-from typing import TypeAlias
-
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-Model: TypeAlias = Pipeline
+type Model = Pipeline
 
 
 def build_model(random_state: int = 42) -> Model:
